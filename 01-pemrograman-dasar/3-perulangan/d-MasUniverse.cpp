@@ -1,17 +1,18 @@
 #include <iostream>
+#include <bits/stdc++.h>
 
 using namespace std;
 
 int main() {
-    int N;
+    int N, result=0;
     cin >> N;
-    int P[N], result;
+    int peserta[N];
     for(int i = 0; i < N; i++){
-        cin >> P[i];
+        cin >> peserta[i];
     }
     for(int i = 0; i < N; i++){
-        if(result < P[i]){
-            result=P[i];
+        if(peserta[i] > result){
+            result = peserta[i];
         }
     }
     cout << result;

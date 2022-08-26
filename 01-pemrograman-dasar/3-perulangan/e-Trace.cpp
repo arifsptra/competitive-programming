@@ -11,7 +11,6 @@ int main(){
             cin >> A[i][j];
             result+=A[i][j];
         }
-        cout << endl;
     }
     cout << result/N;
     return 0;
