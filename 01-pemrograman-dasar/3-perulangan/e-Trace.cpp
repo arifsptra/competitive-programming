@@ -9,9 +9,11 @@ int main(){
     for(int i= 0; i < N; i++){
         for(int j= 0; j < N; j++){
             cin >> A[i][j];
-            result+=A[i][j];
+            if(i==j){
+                result += A[i][j];
+            }
         }
     }
-    cout << result/N;
+    cout << result;
     return 0;
 }
