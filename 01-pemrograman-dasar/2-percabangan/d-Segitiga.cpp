@@ -7,7 +7,7 @@ int main() {
     int A, B, C;
     cin >> A >> B >> C;
     string result;
-    if((A*A + B*B) > C*C) {
+    if(A+B>C && B+C>A && C+A>B) {
         result = "segitiga";
     }else {
         result = "bukan segitiga";

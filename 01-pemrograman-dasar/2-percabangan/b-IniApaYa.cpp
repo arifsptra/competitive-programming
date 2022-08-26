@@ -7,14 +7,14 @@ int main() {
     char s[100];
     cin >> s;
     string result;
-    if(s[0] == '0') {
-        result = "nol";
+    if(isalpha(s[0])) {
+        result = "kata";
     }else if(s[0] > '0') {
         result = "bilangan bulat positif";
     }else if(s[0] < '0') {
         result = "bilangan bulat negatif";
-    }else if(s[0] == 'a' || 'b' || 'c' || 'd' || 'e' || 'f' || 'g' || 'h' || 'i' || 'j' || 'k' || 'l' || 'm' || 'n' || 'o' || 'p' || 'q' || 'r' || 's' || 't' || 'u' || 'v' || 'w' || 'x' || 'y' || 'z') {
-        result = "kata";
+    }else if(s[0] == '0') {
+        result = "nol";
     }
     cout << result;
     return 0;
