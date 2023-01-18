@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdio>
 
 using namespace std;
 
@@ -17,13 +18,23 @@ int main(){
     //     i += 2;
     // }
 
-    int a = 45;
-    int b = 56;
-    do {
-        a = a - 3;
-        b = b - 5;
-    } while ((a >= 0) || (b >= 0));
-    printf("%d %d", a, b);
+    // int a = 45;
+    // int b = 56;
+    // do {
+    //     a = a - 3;
+    //     b = b - 5;
+    // } while ((a >= 0) || (b >= 0));
+    // printf("%d %d", a, b);
+
+    int a[10], b[10];
+
+    for (int i = 0; i < 10; i++) {
+        a[i] = (3*i) % 10;
+    }
+    for (int i = 0; i < 10; i++) {
+        b[i] = 9*a[((i+3) % 10)] + 5%10;
+    }
+    printf("%d\n", b[8]);
 
     return 0;
 }
